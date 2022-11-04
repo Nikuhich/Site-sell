@@ -1,0 +1,2791 @@
+@import '../fonts/fonts.css';
+
+:root {
+    --kr: 'Koulen-Regular';
+    --wt: 'WaterBrush-Regular'
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--k-r);
+}
+
+h1, h2, h3, h4, h5, h6, ul, li, a, p {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.col-none-pad {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* bootstrap fix */
+/* ************************************************************************************* */
+
+.header__nav-button {
+    color: #ffffff;
+    font-size: 35px;
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+button:focus:not(:focus-visible) {
+    outline: none;
+}
+
+.btn-check:focus+.btn,
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    z-index: 4;
+}
+
+.dropdown-menu {
+    background: #222220;
+    border-radius: 5px;
+    padding: 9px;
+}
+
+.dropdown-item {
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+.dropdown-item:hover {
+    color: #CB3B48;
+}
+
+.dropdown-first-item {
+    border-bottom: 1px solid #2F2F2F;
+}
+
+
+/* bootstrap fix-end */
+/* ********************************************************************* */
+/* header start */
+
+.header {
+    width: 100%;
+}
+
+
+.header__nav {
+    background: #222220;
+}
+
+
+.header__nav-link {
+    font-size: 18px;
+    margin-left: 25px;
+    color: #ffffff !important;
+    font-family: Suisse Intl;
+}
+
+.header__nav-btn {
+    padding: 12px;
+    background: #CB3B48;
+    border-radius: 5px;
+    color: #ffffff !important;
+    transition: .7s;
+    margin-left: 30px;
+    display: block;
+}
+
+.header__nav-drop {
+    padding: 0;
+    outline: none;
+}
+
+.header__nav-btn:hover {
+    color: #ffffff;
+    background: #1B1B1B;
+    box-shadow: 0 0 5px 5px rgba(189, 45, 67, 0.199);
+}
+
+.header__title {
+    color: #BD2D43;
+    padding-top: 134px;
+    font-size: 200px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: var(--kr);
+    z-index: -1;
+}
+
+
+.header__img {
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    z-index: 1;
+    width: 35%;
+}
+
+.header__text {
+    font-family: var(--wt);
+    font-size: 80px;
+    color: #ffffff;
+    transform: rotate(350deg);
+    position: absolute;
+    top: 37%;
+    left: 60%;
+    z-index: 1;
+}
+
+
+.header__first-logo {
+    left: 68%;
+    position: absolute;
+    z-index: 3;
+}
+
+.header__two-logo {
+    margin-left: 110px;
+}
+
+
+.header__block-call{
+    border-radius: 10px;
+    background: url(../img/Cloy\ 4\ 1.png)no-repeat center center/cover;
+    background-color: #222222;
+    position: fixed;
+    top: 22%;
+    left: 32%;
+    padding: 25px 143px 52px 70px;
+    transform: translateX(-500%);
+    transition: 1s;
+    z-index: 10;
+}
+
+.header__block-call-title{
+    color: #ffffff;
+    font-size: 40px;
+}
+
+.header__block-call-text{
+    color: #ffffff;
+    margin-top: 25px;
+    font-size: 18px;
+}
+
+.header__block-call-tel{
+    color: #ffffff;
+    font-size: 18px;
+    margin-top: 25px;
+}
+
+.header__block-call-ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    width: 35%;
+}
+
+.header__block-call-ul-li{
+    color: #ffffff;
+    font-size: 32px;
+    transition: 0.5s;
+}
+
+.header__block-call-ul-li:hover{
+    color: #ff0000;
+    transform: scale(1.2);
+}
+
+.btn-icon-none{
+    font-size: 40px;
+    color: #ffffff;
+    border: none;
+    background: transparent;
+    position: absolute;
+    top: 21px;
+    right: 33px;
+}
+
+/* header end */
+/* ************************************************************************ */
+/* main start */
+
+main {
+    background: #222222;
+    padding-top: 95px;
+    padding-bottom: 88px;
+}
+
+.first-and-last__discription-block-line {
+    width: 75px;
+    height: 5px;
+    background: #C93A48;
+}
+
+.first-and-last__discription-block-title {
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-shadow: 0 0 20px #ffffff;
+    margin-top: 15px;
+}
+
+.first-and-last__about-basket-block-serch-box {
+    margin-top: 44px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+.first-and-last__about-basket-block-serch-box-input {
+    border-radius: 5px 0 0 5px;
+    max-width: 271px;
+    width: 85%;
+    border: 1px solid #B7B7B7;
+    padding: 15px 0 16px 23px;
+    color: #B7B7B7;
+    font-size: 16px;
+    background: #222220;
+    outline: none;
+}
+
+.first-and-last__about-basket-block-serch-box-btn {
+    background: #CB3B48;
+    font-size: 20px;
+    color: #ffffff;
+    border-radius: 0 5px 5px 0;
+    padding: 13px;
+    border: none;
+    box-shadow: 0 0 20px 0 #C93A48;
+    position: absolute;
+    right: 319px;
+    top: 0;
+}
+
+.first-and-last__about-order-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 44px;
+}
+
+.first-and-last__about-order-block-title {
+    color: #ffffff;
+    font-size: 19px;
+    font-weight: 400;
+    margin-right: 49px;
+    border-bottom: 1px solid #C93A48;
+    line-height: 27px;
+}
+
+.first-and-last__about-order-block-title-span {
+    color: #C93A48;
+}
+
+.first-and-last__about-order-block-btn {
+    color: #ffffff;
+    font-size: 15px;
+    max-width: 222px;
+    width: 85%;
+    padding: 16px;
+    border-radius: 4px;
+    background: #CB3B48;
+    border: none;
+}
+
+.first-and-last__about-order-block-btn-icon {
+    margin-right: 10px;
+}
+
+/* dish block */
+/* ------------------------------------------------------------------------ */
+
+.fisrt-and-last__dish-block-box-foto-box-img {
+    width: 121%;
+    height: 189px;
+}
+
+.fisrt-and-last__dish-block-box-main-box-for-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fisrt-and-last__dish-block-box-main-box-for-name-title {
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+.fisrt-and-last__dish-block-box-main-box-for-name-btn {
+    border-radius: 50%;
+    padding: 8px 13px 8px 13px;
+    color: #ffffff;
+    border: none;
+    font-size: 15px;
+    background: #CB3B48;
+}
+
+.fisrt-and-last__dish-block-box-main-box-title-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 42%;
+    margin-top: 14px;
+}
+
+.fisrt-and-last__dish-block-box-main-box-title-box-title {
+    color: #CB3B48;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.fisrt-and-last__dish-block-box-main-box-about-title {
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.fisrt-and-last__dish-block-box-main-box-about-title-span {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.fisrt-and-last__dish-block-box-main-box-about {
+    margin-top: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 93%;
+}
+
+.fisrt-and-last__dish-block-box-main-box-about-quanity {
+    display: flex;
+    align-items: center;
+}
+
+.fisrt-and-last__dish-block-box-main-box-about-quanit-link-plus {
+    color: #ffffff !important;
+    padding: 6px;
+    background: #CB3B48;
+    border-radius: 0 5px 5px 0;
+}
+
+.fisrt-and-last__dish-block-box-main-box-about-quanit-link-minus {
+    color: #ffffff !important;
+    padding: 6px;
+    background: #CB3B48;
+    border-radius: 5px 0 0 5px;
+}
+
+.fisrt-and-last__dish-block-box-main-box-about-quanit-outupt {
+    width: 40px;
+    background: #ffffff;
+    color: #818181;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    padding-left: 18%;
+    padding-top: 7.5px;
+    padding-bottom: 6.5px;
+}
+
+.fisrt-and-last__dish-block-box-main-box-about-btn {
+    border: none;
+    background: #CB3B48;
+    font-size: 14px;
+    color: #ffffff;
+    text-transform: uppercase;
+    width: 133px;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+.fisrt-and-last__dish-block-box {
+    border-radius: 30px;
+    margin-top: 27px;
+}
+
+.fisrt-and-last__dish-block-parmidjano {
+    margin-top: 89px;
+}
+
+.fisrt-and-last__dish-block-box-main-box {
+    padding: 22px 29px 16px 43px;
+    background: url(../img/Слой\ 4\ 2.png);
+
+}
+
+/* order-block */
+/* ------------------------------------------------------------------------- */
+
+.first-and-last__about-basket-block-order-and-check {
+    background: url(../img/Слой\ 4\ 2.png)no-repeat center center/cover;
+    margin-top: 89px;
+    border-radius: 30px;
+    padding: 22px 20px 28px 20px;
+}
+
+.first-and-last__about-basket-block-order-and-check-title {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.first-and-last__about-basket-block-order-and-check-order-box {
+    margin-top: 25px;
+}
+
+.first-and-last__about-basket-block-order-and-check-ul-li {
+    margin-top: 15px;
+}
+
+.first-and-last__about-basket-block-order-and-check-order-box-dish-title {
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.first-and-last__about-basket-block-order-and-check-order-box-dish-quinity {
+    color: #767676;
+    font-size: 16px;
+}
+
+.first-and-last__about-basket-block-order-and-check-order-box-dish-coast {
+    color: #CB3B48;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.first-and-last__about-basket-block-order-and-check-order-box-dish-meat-title {
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.first-and-last__about-basket-block-order-and-check-order-box-dish-meat-quinity {
+    color: #767676;
+    font-size: 16px;
+}
+
+.first-and-last__about-basket-block-order-and-check-order-box-dish-meat-coast {
+    color: #CB3B48;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.first-and-last__about-basket-block-order-and-check-order-box-dish-cezar-title {
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    width: 82%;
+}
+
+.first-and-last__about-basket-block-order-and-check-order-box-dish-cezar-quinity {
+    color: #767676;
+    font-size: 16px;
+}
+
+.first-and-last__about-basket-block-order-and-check-order-box-dish-cezar-coast {
+    color: #CB3B48;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.first-and-last__about-basket-block-order-and-check-order-box-deliver {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 21px;
+    padding-bottom: 17px;
+    border-top: 1px solid rgba(255, 255, 255, 0.26);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.26);
+    margin-top: 17px;
+    margin-bottom: 17px;
+}
+
+.first-and-last__about-basket-block-order-and-check-order-box-deliver-title {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.first-and-last__about-basket-block-order-and-check-order-box-deliver-coast {
+    color: #CB3B48;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.first-and-last__about-basket-block-order-and-check-order-box-promo-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.first-and-last__about-basket-block-order-and-check-order-box-promo-box-input {
+    border-radius: 3px;
+    background: #222220;
+    color: #B7B7B7;
+    padding: 10px 0 10px 15px;
+    outline: none;
+    border: 1px solid #B7B7B7;
+    font-size: 10px;
+}
+
+.first-and-last__about-basket-block-order-and-check-order-box-promo-box-btn {
+    position: absolute;
+    border-radius: 0 3px 3px 0;
+    width: 38px;
+    height: 38px;
+    border: none;
+    background: #CB3B48;
+    box-shadow: 0 0 20px 0 #CB3B48;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 300;
+    top: 0;
+    left: 36%;
+}
+
+.first-and-last__about-basket-block-order-and-check-order-box-promo-box-coast {
+    color: #CB3B48;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.first-and-last__about-basket-block-order-and-check-order-box-end {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.first-and-last__about-basket-block-order-and-check-order-box-end-title {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.first-and-last__about-basket-block-order-and-check-order-box-end-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 35%;
+}
+
+.first-and-last__about-basket-block-order-and-check-order-box-end-price-no-price {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 0;
+    border-bottom: 1px solid #ffffff;
+}
+
+.first-and-last__about-basket-block-order-and-check-order-box-end-price-with-price {
+    color: #CB3B48;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.first-and-last__about-basket-block-order-and-check-btn {
+    background: rgb(150, 85, 90);
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+    width: 90%;
+    padding: 17px;
+    margin-top: 49px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.first-and-last__about-basket-block-order-and-check-hide-block {
+    transition: 0.7s;
+    position: fixed;
+    top: -500%;
+    left: 29%;
+    background: url(../img/Слой\ 4\ 2.png)no-repeat center center/cover;
+    background-color: #222222;
+    padding: 49px 41px 31px 41px;
+    border-radius: 13px;
+}
+
+.first-and-last__about-basket-block-order-and-check-hide-block-title {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.first-and-last__about-basket-block-order-and-check-hide-block-box-input {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.first-and-last__about-basket-block-order-and-check-hide-block-box-input-input {
+    outline: none;
+    border: 1px solid #BD2D43;
+    background: #222222;
+    border-radius: 5px;
+    padding: 15px 21px 16px 21px;
+    color: #B7B7B7;
+    margin-bottom: 21px;
+    width: 90%;
+}
+
+.first-and-last__about-basket-block-order-and-check-hide-block-box-input-textarea {
+    border: 1px solid #BD2D43;
+    background: #222222;
+    border-radius: 5px;
+    padding: 15px 21px 16px 21px;
+    color: #B7B7B7;
+    width: 90%;
+    outline: none;
+}
+
+.first-and-last__about-basket-block-order-and-check-hide-block-box-discription {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+.first-and-last__about-basket-block-order-and-check-hide-block-box-discription-ul-li {
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+    width: 80%;
+}
+
+.first-and-last__about-basket-block-order-and-check-hide-block-box-discription-ul-li-check {
+    display: none;
+}
+
+.first-and-last__about-basket-block-order-and-check-hide-block-box-discription-ul-li-span {
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    background: #ffffff;
+    border: 7px solid #fff;
+    box-sizing: content-box;
+}
+
+.first-and-last__about-basket-block-order-and-check-hide-block-box-discription-title {
+    color: #fff;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.last-text {
+    width: 100%;
+}
+
+.first-and-last__about-basket-block-order-and-check-hide-block-box-discription-ul-li-text {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 12px;
+}
+
+.first-and-last__about-basket-block-order-and-check-hide-block-box-discription-btn {
+    border-radius: 5px;
+    background: #CB3B48;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #fff !important;
+    border: none;
+    width: 40%;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 34px;
+}
+
+.first-and-last__about-basket-block-order-and-check-hide-block-box-discription-btn-none {
+    color: #fff;
+    border: none;
+    background: transparent;
+    font-size: 25px;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    transition: 0.7s;
+}
+
+.first-and-last__about-basket-block-order-and-check-hide-block-box-discription-btn-none:hover {
+    transform: scale(1.5) rotate(180deg)
+}
+
+
+.first-and-last__about-basket-block-order-and-check-hide-block-text {
+    color: #636363;
+    font-size: 14px;
+    font-weight: 400;
+    width: 55%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+
+
+
+
+.first-and-last__about-basket-block-additives {
+    margin-top: 69px;
+}
+
+.first-and-last__about-basket-block-additives-title {
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 400;
+    text-shadow: 0 0 20px #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 42px;
+}
+
+.first-and-last__about-basket-block-additives-tomato {
+    position: relative;
+    transition: 0.5s;
+}
+
+.first-and-last__about-basket-block-additives-tomato-img-box-foto {
+    width: 100%;
+}
+
+.first-and-last__about-basket-block-additives-tomato-title-box {
+    background: #CB3B48;
+    padding: 8px 0 8px 13px;
+    height: 100%;
+    border-radius: 0 13px 13px 0;
+}
+
+.first-and-last__about-basket-block-additives-tomato-title-box-text {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 15px;
+    width: 58%;
+}
+
+.first-and-last__about-basket-block-additives-tomato-title-box-ds {
+    color: #ffffff;
+    font-size: 14px;
+    margin-top: 3px;
+}
+
+.first-and-last__about-basket-block-additives-tomato-title-box-ds-span {
+    font-size: 10px;
+}
+
+.first-and-last__about-basket-block-additives-tomato-btn {
+    border-radius: 50%;
+    padding: 7px 11px;
+    border: none;
+    background: #ffffff;
+    color: #CB3B48;
+    font-weight: 700;
+    position: absolute;
+    top: -12px;
+    right: 4px;
+}
+
+.first-and-last__about-basket-block-additives-ter {
+    position: relative;
+    transition: 0.5s;
+}
+
+.first-and-last__about-basket-block-additives-ter-img-box-foto {
+    width: 100%;
+}
+
+.first-and-last__about-basket-block-additives-ter-title-box {
+    background: #ffffff;
+    border-radius: 0 13px 13px 0;
+    height: 100%;
+    padding: 3px 0 3px 13px;
+}
+
+.first-and-last__about-basket-block-additives-ter-title-box-text {
+    color: #000000;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+}
+
+.first-and-last__about-basket-block-additives-ter-title-box-ds {
+    color: #CB3B48;
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.first-and-last__about-basket-block-additives-ter-title-box-ds-span {
+    font-size: 10px;
+}
+
+.first-and-last__about-basket-block-additives-ter-btn {
+    border-radius: 50%;
+    padding: 7px 11px;
+    border: none;
+    background: #ffffff;
+    color: #CB3B48;
+    font-weight: 700;
+    position: absolute;
+    top: -12px;
+    right: 4px;
+    box-shadow: 0 0 20px 0 #00000060;
+}
+
+.first-and-last__about-basket-block-additives-tomato-extra-box {
+    position: relative;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.first-and-last__about-basket-block-additives-tomato-extra-box-img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+.first-and-last__about-basket-block-additives-tomato-extra-box-btn {
+    border: none;
+    border-radius: 50%;
+    padding: 6px 10px;
+    position: absolute;
+    top: -15px;
+    left: 36px;
+}
+
+.first-and-last__about-basket-block-additives-ter-extra-box {
+    position: relative;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.first-and-last__about-basket-block-additives-ter-extra-box-img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+.first-and-last__about-basket-block-additives-ter-extra-box-btn {
+    border: none;
+    border-radius: 50%;
+    padding: 6px 10px;
+    position: absolute;
+    top: -15px;
+    left: 36px;
+}
+
+.first-and-last__about-basket-block-additives-ter-extra-box-two {
+    position: relative;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.first-and-last__about-basket-block-additives-ter-extra-box-img-two {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+.first-and-last__about-basket-block-additives-ter-extra-box-btn-two {
+    border: none;
+    border-radius: 50%;
+    padding: 6px 10px;
+    position: absolute;
+    top: -15px;
+    left: 36px;
+}
+
+.first-and-last__discription-block-two {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #00000080;
+    top: 0;
+    opacity: 0;
+    left: 0;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+.first-and-last__discription-block-two-title {
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    text-shadow: 0 0 20px #ff0000;
+    font-weight: 900;
+}
+
+
+.first-and-last__discription-block-three{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #00000080;
+    top: 0;
+    opacity: 0;
+    left: 0;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+.first-and-last__discription-block-three-title{
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    text-shadow: 0 0 20px #ff0000;
+    font-weight: 900;
+}
+
+.first-and-last__discription-block-first{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.first-and-last__discription-block-first-for-date{
+    display: flex;
+    align-items: center;
+}
+
+.first-and-last__discription-block-first-title{
+    color: #ffffff70;
+    font-weight: 400;
+    font-size: 30px;
+    margin-left: 32px;
+    padding-top: 14px;
+}
+
+.first-and-last__discription-block-second-title{
+    text-transform: uppercase;
+    font-size: 38px;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.fisrt-and-last__dish-block-box-main-box-for-nothing-btn{
+    border-radius: 50%;
+    padding: 7px 10px;
+    background: #fff;
+    color: #CB3B48;
+    font-size: 17px;
+    border: none;
+}
+
+.block-order-table-box{
+    border-radius: 8px;
+    background: #ffffff;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-table{
+    font-size: 15px;
+    color: #CB3B48;
+    display: none;
+}
+
+.block-order-table-text{
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.block-order-table{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 42%;
+}
+
+.block-order-table-box-two{
+    border-radius: 50%;
+    background: #C83A48;
+    padding: 6px 8px;
+    font-size: 12px;
+    position: relative;
+}
+
+.block-order-table-box-two::after{
+    content: '';
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #ffffff;
+    position: absolute;
+    top: -10px;
+    left: 11px;
+}
+
+.block-order-table-box-two::before{
+    content: '';
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #ffffff;
+    position: absolute;
+    top: 10px;
+    left: -10px;
+}
+
+.block-order-table-box-two-span:after{
+    content: '';
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #ffffff;
+    position: absolute;
+    top: 10px;
+    right: -10px;
+}
+
+.first-and-last__about-basket-block-order-and-check-for-btn-btn{
+    background: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    color: #CB3B48;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 25px;
+}
+
+.first-and-last__about-basket-block-order-and-check-for-btn-btn-two{
+    background: #CB3B48;
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 25px;
+    margin-left: 15px;
+}
+
+.first-and-last__about-basket-block-order-and-check-title-block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.first-and-last__about-basket-block-order-and-check-title-two{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.first-and-last__about-basket-block-additives-title-two{
+    background: #CB3B48;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 14px 52px;
+    border: none;
+    width: 245px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px 0 #CB3B48;
+    transition: 0.5s;
+}
+
+.first-and-last__about-basket-block-additives-title-two:hover{
+    background: #ffffff;
+    color: #CB3B48;
+}
+
+.first-and-last__about-basket-block-additives-block-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.block-btn-about-order{
+    display: flex;
+}
+
+.rewiew-block__title{
+    color: #ffffff;
+    font-size: 38px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 149px;
+}
+
+.icon-one{
+    transition: 0.5s;
+}
+
+.icon-one-active{
+    transform: rotate(90deg);
+    transition: 0.5s;
+}
+
+.icon-click{
+    color: #ffffff;
+}
+
+.icon-click-active{
+    color: #3ECB3B;
+}
+
+.rewiew-block__hide-box-main{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 40px;
+}
+
+.rewiew-block__hide-box-for-rewiew-title{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 24px; 
+}
+
+.rewiew-block__hide-box-for-rewiew-ul{
+    display: flex;
+}
+
+.rewiew-block__hide-box-for-rewiew-ul-li{
+    color: #ffffff;
+    margin-top: 20px;
+    font-size: 40px;
+    margin-right: 15px;
+}
+
+.rewiew-block__hide-box-block-input{
+    margin-top: 70px;
+}
+
+.rewiew-block__hide-box-block-input-textarea{
+    border-radius: 15px;
+    background: #161615;
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff91;
+    padding: 15px;
+    height: 118px !important;
+    max-width: 1110px;
+    width: 94%;
+    outline: none;
+    overflow-y: scroll;
+}
+
+.rewiew-block__hide-box-block-input-textarea::-webkit-scrollbar{
+    width: 9px;
+    max-height: 30px;
+    min-height: 15px;
+    height: 100%;
+}
+
+.rewiew-block__hide-box-block-input-textarea::-webkit-scrollbar-track-piece{
+    background: transparent;
+}
+
+.rewiew-block__hide-box-block-input-textarea::-webkit-scrollbar-thumb{
+    background: rgba(203, 59, 71, 0.623);
+    border-radius: 10px;
+}
+
+.rewiew-block__hide-box-block-btn{
+    display: flex;
+    justify-content: flex-end;
+    max-width: 1110px;
+    width: 94%;
+    margin-top: 40px;
+}
+
+.rewiew-block__hide-box-block-btn-one{
+    border: none;
+    border-radius: 8px;
+    color: #CB3B48;
+    background: #ffffff;
+    padding: 16px 21px;
+    font-size: 16px;
+    font-weight: 400;
+    transition: 0.5s;
+}
+
+.rewiew-block__hide-box-block-btn-one:hover{
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    background: #CB3B48;
+    padding: 16px 21px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.rewiew-block__hide-box-block-btn-two{
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    background: #CB3B48;
+    padding: 16px 60px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 21px;
+    transition: 0.5s;
+}
+
+.rewiew-block__hide-box-block-btn-two:hover{
+    border: none;
+    border-radius: 8px;
+    color: #CB3B48;
+    background: #ffffff;
+    padding: 16px 60px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 21px;
+}
+
+.rewiew-block__hide-box{
+    display: none;
+}
+
+.first-and-last__about-basket-block-order-and-check-pay{
+    position: fixed;
+    z-index: 10;
+    top: -100%;
+    left: -100%;
+    border-radius: 10px;
+    background: url(../img/Cloy\ 4\ 1.png)no-repeat center center/cover;
+    background-color: #222222;
+    padding: 30px 0 25px 40px;
+    transition: 0.8s;
+}
+
+.active-pay{
+    opacity: 1; 
+    z-index: 1;
+}
+
+.active-block{
+    top: 15%; 
+    left: 20%
+}
+
+.section-order-readi{
+    padding: 49px 150px;
+    border-radius: 10px;
+    background: url(../img/Cloy\ 4\ 1.png)no-repeat center center/cover;
+    background-color: #222222;
+    position: fixed;
+    top: -500%;
+    left: 17%;
+    transition: 0.7s;
+}
+
+.section-order-readi-title{
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+
+.section-order-readi-btn{
+    border-radius: 5px;
+    background: #CB3B48;
+    color: #ffffff !important;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 16px;
+    max-width: 275px;
+    width: 100%;
+    margin-top: 28px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.complete_active{
+    top: 20%;
+    left: 13%;
+}
+
+.complete_possive{
+    top: -500;
+}
+
+/* main end */
+/* ************************************************************************ */
+/* footer start */
+
+.footer {
+    padding-top: 40px;
+    padding-bottom: 25px;
+    background: url(../img/Слой\ 4\ 2.png)no-repeat center center/cover;
+    background-color: #040403;
+}
+
+.footer__fisrt-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__block-ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer__block-ul-ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 15px;
+}
+
+.footer__ul-link {
+    color: #DCDCDC;
+    font-size: 16px;
+    font-weight: 400;
+    transition: 0.4s;
+}
+
+.footer__ul-link:hover {
+    color: #CB3B48;
+}
+
+.footer__last-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.fooetr__title {
+    color: #BD2D43;
+    font-size: 24px;
+    font-weight: 700;
+    transition: 0.4s;
+}
+
+.fooetr__title:hover {
+    color: #ffffff;
+}
+
+.fooetr__text {
+    color: #8F8F8F;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.footer__ul-icon {
+    display: flex;
+}
+
+.footer__ul-icon-link {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #101010;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+    transition: 0.4s;
+}
+
+.footer__ul-icon-link:hover {
+    background: #ffffff;
+}
+
+.footer__ul-icon-link-icon {
+    color: #BD2D43;
+    font-size: 19px;
+}
+
+.footer__box-text {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.fooeter__last-text {
+    color: #9C9C9C;
+    font-size: 14px;
+    font-weight: 400;
+    border-bottom: 1px solid #9C9C9C;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.fooeter__last-text:hover {
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+
+.fooeter__last-text-last {
+    border: none;
+    cursor: text;
+    transition: 0.4s;
+}
+
+.fooeter__last-text-last:hover {
+    color: #ffffff;
+    border: none;
+}
+
+/* footer end */
+/* *********************************************************************** */
+/* media start */
+
+
+@media (max-width: 1280px) {
+    .first-and-last__about-basket-block-serch-box-btn {
+        right: 229px;
+    }
+
+    .first-and-last__about-basket-block-order-and-check-order-box-end-price {
+        width: 42%;
+    }
+
+    .first-and-last__about-basket-block-additives-tomato-title-box-text {
+        width: 77%;
+    }
+
+    .first-and-last__about-basket-block-additives-tomato-title-box {
+        padding: 5px 0 1px 13px;
+    }
+
+}
+
+@media (max-width: 1024px) {
+    
+    .first-and-last__about-basket-block-serch-box-btn {
+        right: 139px;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-order-box-promo-box-btn {
+        left: 54%;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-order-box-dish-quinity {
+        font-size: 15px;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-order-box-dish-meat-quinity {
+        font-size: 15px;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-order-box-dish-cezar-quinity {
+        font-size: 15px;
+    }
+    
+    .first-and-last__about-basket-block-additives-tomato-title-box-text {
+        font-size: 13px;
+    }
+    
+    .first-and-last__about-basket-block-additives-tomato-img-box-foto {
+        width: 105%;
+    }
+    
+    .first-and-last__about-basket-block-additives-ter-title-box-text {
+        font-size: 12px;
+    }
+    
+    .first-and-last__about-basket-block-additives-ter-img-box-foto {
+        width: 105%;
+    }
+    
+    .first-and-last__about-basket-block-additives-ter-title-box {
+        padding: 3px 0 0px 13px;
+    }
+    
+    .first-and-last__about-basket-block-additives-ter-btn {
+        padding: 5px 9px;
+        top: -21px;
+        right: -4px;
+    }
+    
+    .first-and-last__about-basket-block-additives-tomato-btn {
+        padding: 5px 9px;
+        top: -21px;
+        right: -4px;
+    }
+    
+    .header__first-logo {
+        left: 65%;
+    }
+    
+    .fisrt-and-last__dish-block-box-main-box-title-box {
+        width: 60%;
+        margin-top: 4px;
+    }
+    
+    .fisrt-and-last__dish-block-box-main-box-about {
+        margin-top: 14px;
+        width: 100%;
+    }
+    
+    .fisrt-and-last__dish-block-box-foto-box-img {
+        width: 126%;
+        height: 180px;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-order-box-dish-cezar-title {
+        font-size: 12px;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-order-box-dish-meat-title {
+        font-size: 13px;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-order-box-dish-title {
+        font-size: 13px;
+        width: 80%;
+    }
+    
+    .fisrt-and-last__dish-block-box-main-box {
+        padding: 4px 10px 15px 31px;
+    }
+    
+    .fisrt-and-last__dish-block-box-foto-box-img {
+        width: 126%;
+        height: 160px;
+    }
+    
+
+    
+    .first-and-last__about-basket-block-order-and-check-hide-block{
+        left: 15%;
+    }
+    
+    .first-and-last__discription-block-two-title{
+        font-size: 25px;
+    }
+    
+    .header__block-call {
+        left: 20%;
+    }
+    
+    .section-order-readi {
+        padding: 49px 90px;
+        left: 10%;
+    }
+    
+    
+    
+}
+
+
+
+
+@media (max-width: 991px) {
+
+
+    .header__ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .header__main-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ms-auto {
+        margin: 0 !important;
+    }
+
+
+    .header__nav-btn {
+        font-size: 20px;
+        box-shadow: 1px 1px 11px 6px #bd2d43;
+        background: #1B1B1B;
+    }
+
+    .header__nav-btn:hover {
+        background: #ffffff;
+        color: #1B1B1B !important;
+    }
+
+    .header__nav-btn:hover .header__nav-icon {
+        color: #1B1B1B;
+    }
+
+    .header__first-logo {
+        margin-left: auto;
+    }
+
+    .header__nav-button {
+        margin-left: 15px;
+    }
+
+    .bg-fone {
+        background: url(../img/Слой\ 4\ 1.png)no-repeat center center/cover;
+    }
+
+
+    .header__first-logo {
+        position: inherit;
+    }
+
+    .header__two-logo {
+        margin-left: 30px;
+    }
+    
+    
+    .first-and-last__about-basket-block-serch-box-input {
+        border-radius: 5px 0 0 5px;
+        max-width: 200px;
+    }
+    
+    .first-and-last__about-basket-block-serch-box-btn {
+        right: 30px;
+    }
+    
+    .first-and-last__about-order-block-btn {
+        font-size: 13px;
+        max-width: 188px;
+        width: 85%;
+    }
+    
+    .first-and-last__about-order-block-title {
+        margin-right: 30px;
+    }
+    
+    .fisrt-and-last__dish-block-box-main-box-title-box {
+        width: 47%;
+    }
+    
+    .fisrt-and-last__dish-block-box-main-box {
+        padding: 4px 10px 15px 37px;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-order-box-dish-title {
+        font-size: 20px;
+    }
+    
+    
+    .first-and-last__about-basket-block-order-and-check-order-box-dish-quinity {
+        font-size: 20px;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-order-box-dish-coast {
+        font-size: 23px;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-order-box-dish-meat-title {
+        font-size: 20px;
+        width: 73%;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-order-box-dish-meat-quinity {
+        font-size: 20px;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-order-box-dish-meat-coast {
+        font-size: 23px;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-order-box-dish-cezar-title {
+        font-size: 20px;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-order-box-dish-cezar-quinity {
+        font-size: 20px;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-order-box-dish-cezar-coast {
+        font-size: 23px;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-order-box-deliver {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-order-box-promo-box-input {
+        width: 54%;
+        font-size: 15px;
+        padding: 10px 11px 10px 14px;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-order-box-promo-box-btn {
+        width: 40px;
+        height: 44px;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-order-box-promo-box-btn {
+        left: 44%;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-order-box-promo-box-input {
+        width: 45%;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-order-box-end-price {
+        width: 21%;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-btn {
+        font-size: 16px;
+        width: 50%;
+        margin-top: 40px;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-order-box-end {
+        margin-top: 35px;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-title {
+        font-size: 28px;
+    }    
+    
+    
+    .block-order-2 {
+        order: 1;
+    }
+    
+    .block-order-1 {
+        order: 0;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-hide-block {
+        left: 13%;
+    }
+    
+    
+    .first-and-last__discription-block-title {
+        color: #ffffff;
+        font-size: 35px;
+    }
+    
+    .first-and-last__discription-block-second-title {
+        font-size: 30px;
+    }
+    
+    
+    .first-and-last__about-basket-block-additives-block-title {
+        margin-bottom: 30px;
+    }
+    
+    .rewiew-block{
+        margin-top: 20px;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-for-btn-btn {
+        padding: 15px 44px;
+        font-size: 18px;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-for-btn-btn-two {
+        padding: 15px 44px;
+        font-size: 18px;
+        margin-left: 159px;
+    }
+    
+    .rewiew-block__hide-box-main {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .rewiew-block__hide-box-for-rewiew{
+        margin-top: 30px;
+    }
+    
+    .rewiew-block__hide-box-for-rewiew{
+        margin-top: 30px;
+    }
+    
+    .section-order-readi {
+        padding: 45px 0px;
+        left: 21%;
+    }
+    
+    
+    
+    
+
+
+
+
+
+    .footer__ul-icon {
+        display: flex;
+        margin-top: 17px;
+    }
+
+    .footer__block-ul {
+        margin-top: 20px;
+    }
+
+    .fooeter__last-text {
+        margin-right: 17px;
+    }
+
+    .footer__box-text {
+        margin-top: 20px;
+        display: block;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .fooeter__last-text-last {
+        margin-top: 7px;
+    }
+
+}
+
+@media (max-width: 820px){
+    
+    .first-and-last__about-basket-block-order-and-check-pay{
+        left: 9% !important;
+    }
+    
+    .section-order-readi {
+        padding: 45px 0px;
+    }
+    
+    .complete_active {
+        top: 10%;
+        left: 13% !important;
+    }
+    
+    
+    
+}
+
+@media (max-width: 767px){
+    .first-and-last__discription-block-title {
+        color: #ffffff;
+        font-size: 32px;
+    }
+    
+    .first-and-last__about-basket-block-serch-box-btn {
+        right: 270px;
+    }
+    
+    .first-and-last__about-basket-block-serch-box-btn {
+        right: 34px;
+    }
+    
+    .first-and-last__about-basket-block-serch-box-input {
+        border-radius: 5px 0 0 5px;
+        max-width: 356px;
+        margin: auto;
+    }
+    
+    .fisrt-and-last__dish-block-box-main-box-for-name-title {
+        font-size: 16px;
+    }
+    
+    .fisrt-and-last__dish-block-box-main-box-title-box {
+        width: 68%;
+    }
+    
+    .fisrt-and-last__dish-block-box-main-box-about-title {
+        font-size: 20px;
+    }
+    
+    .fisrt-and-last__dish-block-box-main-box-about-title-span {
+        font-size: 14px;
+    }
+    
+    .fisrt-and-last__dish-block-box-main-box-about-quanit-link-minus {
+        padding: 4px;
+    }
+    
+    .fisrt-and-last__dish-block-box-main-box-about-quanit-link-plus {
+        padding: 4px
+    }
+    
+    .fisrt-and-last__dish-block-box-main-box-about-quanit-outupt {
+        padding-top: 4.5px;
+        padding-left: 20%;
+    }
+    
+    .fisrt-and-last__dish-block-box-main-box-about-btn {
+        font-size: 12px;
+        width: 100px;
+    }
+    
+    .fisrt-and-last__dish-block-box-main-box {
+        padding: 4px 9px 10px 23px;
+    }
+    
+    .fisrt-and-last__dish-block-box-foto-box-img {
+        height: 151px;
+    }
+    
+    .fisrt-and-last__dish-block-box-main-box-for-name-btn {
+        padding: 6px 10px 6px 10px;
+        font-size: 14px;
+    }
+    
+    .first-and-last__about-basket-block-additives-tomato-title-box-text {
+        font-size: 10px;
+    }
+    
+    .first-and-last__about-basket-block-additives-ter-title-box-text {
+        font-size: 10px;
+    }
+    
+    .first-and-last__about-basket-block-additives-tomato-img-box-foto {
+        width: 105%;
+        height: 54px;
+    }
+    
+    .first-and-last__about-basket-block-additives-ter-img-box-foto {
+        width: 105%;
+        height: 53px;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-order-box-end-price {
+        width: 30%;
+    }
+    
+    .first-and-last__about-basket-block-serch-box-input {
+        padding: 15px 10px 16px 23px;
+    }    
+    
+    
+    .first-and-last__about-basket-block-order-and-check-hide-block {
+        left: 3%;
+    }
+    
+    .first-and-last__discription-block-two-title{
+        font-size: 20px;
+    }
+    
+    .footer__fisrt-block{
+        flex-direction: column;
+    }
+    
+    .header__block-call {
+        left: 13%;
+    }
+    
+    .first-and-last__discription-block-first {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .first-and-last__discription-block-second-title {
+        margin-top: 15px;
+    }    
+    
+    .first-and-last__about-basket-block-additives-title {
+        font-size: 33px;
+    }
+    
+    .first-and-last__about-basket-block-additives-block-title {
+        margin-bottom: 30px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .rewiew-block__hide-box-for-rewiew-ul-li {
+        font-size: 33px;
+    }
+    
+    .rewiew-block__hide-box-block-btn-one {
+        padding: 14px 17px;
+        font-size: 14px;
+    }
+    
+    .rewiew-block__hide-box-block-btn-two {
+        padding: 14px 44px;
+        font-size: 14px;
+        margin-left: 88px;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-for-btn-btn-two {
+        padding: 15px 39px;
+        font-size: 15px;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-for-btn-btn {
+        padding: 15px 39px;
+        font-size: 15px;
+    }
+    
+    .block-btn-about-order {
+        justify-content: space-between;
+    }
+    
+    .fisrt-and-last__dish-block-box-main-box-about{
+        display: grid;
+        grid-template-columns:  repeat(2,  1fr);
+    }
+    
+    .block-order-table{
+        width: 70%;
+        margin-top: 10px;
+        margin-left: auto;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    
+    .fisrt-and-last__dish-block-box-foto-box-img {
+        height: 183px;
+        object-fit: cover;
+        border-radius: 8px 0 0 8px;
+    }
+    
+    .fisrt-and-last__dish-block-box-main-box-about-quanit-outupt {
+        padding-left: 10%;
+    }
+    
+    .section-order-readi-title {
+        font-size: 20px;
+        width: 57%;
+    }
+    
+    .section-order-readi {
+        padding: 33px 0px;
+        width: 78%;
+    }
+    
+    .complete_active {
+        top: 10%;
+        left: 11% !important;
+    }
+    
+    .section-order-readi-btn {
+        font-size: 13px;
+        padding: 15px;
+        max-width: 206px;
+    }
+    
+    
+    
+}
+
+@media (max-width: 600px) {
+
+    .header__main-menu {
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+
+    .header__ul {
+        padding-bottom: 10px;
+        padding-top: 15px;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-hide-block {
+        top: 4%;
+        z-index: 10;
+        width: 80%;
+        left: 9%;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-hide-block-title {
+        font-size: 18px;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-hide-block-box-input-input {
+        width: 100%;
+        font-size: 14px;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-hide-block-box-input-textarea {
+        width: 100%;
+        font-size: 14px;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-hide-block-box-discription-title {
+        font-size: 19px;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-hide-block-box-discription-title {
+        font-size: 19px;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-hide-block-box-discription-btn {
+        font-size: 17px;
+        width: 54%;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-hide-block-text {
+        font-size: 13px;
+        width: 80%;
+    }
+    
+    .first-and-last__discription-block-two-title{
+        font-size: 20px;
+        text-align: center;
+        width: 70%;
+    }
+    
+    .header__block-call {
+        left: 9%;
+        padding: 15px 110px 28px 29px;
+    }
+    
+    .header__block-call-title {
+        font-size: 30px;
+    }
+    
+    .header__block-call-text {
+        font-size: 14px;
+    }
+    
+    .header__block-call-tel {
+        font-size: 14px;
+    }
+    
+    .header__block-call-ul {
+        width: 60%;
+    }
+    
+    .btn-icon-none {
+        font-size: 30px;
+        top: 11px;
+        right: 22px;
+    }
+    
+    .rewiew-block__hide-box-block-btn-two{
+        margin-left: 0;
+    }
+
+    .rewiew-block__hide-box-block-btn {
+        justify-content: space-between;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-for-btn-btn-two{
+        margin-left: 0;
+    }
+    
+    .block-btn-about-order {
+        margin-top: 15px;
+    }
+    
+
+
+
+
+    .footer__fisrst-block-img {
+        width: 90%;
+    }
+
+    .fooetr__title {
+        font-size: 20px;
+    }
+
+    .fooetr__text {
+        font-size: 9px;
+    }
+
+    .footer__ul-icon-link-icon {
+        font-size: 17px;
+    }
+
+    .footer__ul-icon-link {
+        width: 27px;
+        height: 27px;
+    }
+
+    .footer__ul-link {
+        font-size: 13px;
+    }
+
+}
+
+@media (max-width: 500px){
+    .first-and-last__about-basket-block-serch-box-input {
+        border-radius: 5px 0 0 5px;
+        max-width: 229px;
+    }
+    
+    .first-and-last__about-basket-block-additives-tomato-title-box-text {
+        font-size: 9px;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-hide-block-title {
+        font-size: 14px;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-hide-block-box-input-input {
+        font-size: 12px;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-hide-block-box-input-textarea {
+        font-size: 12px;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-hide-block-box-discription-ul-li {
+        width: 100%;
+    }    
+    
+    .first-and-last__about-basket-block-order-and-check-hide-block-box-discription-ul-li-text {
+        font-size: 14px;
+        width: 80%;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-hide-block-box-discription-btn {
+        font-size: 13px;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-hide-block-text {
+        font-size: 12px;
+        width: 85%;
+    }
+    
+    .header__block-call-title {
+        font-size: 19px;
+    }    
+    
+    .header__block-call-text {
+        font-size: 11px;
+    }
+    
+    .header__block-call-tel {
+        color: #ffffff;
+        font-size: 12px;
+    }
+    
+    .header__block-call-ul {
+        margin-top: 16px;
+        width: 73%;
+    }
+    
+    .fisrt-and-last__dish-block-box-foto-box-img {
+        width: 147%;
+        height: 156px;
+    }
+    
+    .fisrt-and-last__dish-block-box-main-box-about-quanit-outupt {
+        padding-left: 13%;
+    }
+    
+    .block-order-table {
+        width: 100%;
+    }
+    
+    .rewiew-block__hide-box-main {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .rewiew-block__hide-box-block-btn-one {
+        padding: 8px 7px;
+        font-size: 11px;
+    }
+    
+    .rewiew-block__hide-box-block-btn-two {
+        padding: 8px 27px;
+        font-size: 12px;
+    }
+    
+    .rewiew-block__hide-box-block-input-textarea {
+        font-size: 15px;
+    }
+    
+    .rewiew-block__hide-box-for-rewiew-ul-li {
+        font-size: 24px;
+    }
+    
+    .rewiew-block__hide-box-for-rewiew {
+        margin-top: 20px;
+    }
+    
+    .rewiew-block__hide-box-for-rewiew-title {
+        font-size: 18px;
+    }
+    
+    .rewiew-block__title {
+        font-size: 33px;
+    }
+    
+    .rewiew-block__hide-box-block-input {
+        margin-top: 35px;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-for-btn-btn {
+        padding: 10px 25px;
+        font-size: 13px;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-for-btn-btn-two{
+        padding: 10px 25px;
+        font-size: 13px;
+    }
+    
+    .fisrt-and-last__dish-block-box-foto-box-img {
+        width: 145% !important;
+        height: 157px !important;
+    }
+    
+    .fisrt-and-last__dish-block-box-main-box-about-quanit-outupt {
+        padding-top: 4px !important;
+        padding-left: 14% !important;
+    }
+    
+    .fisrt-and-last__dish-block-box-main-box-for-nothing-btn {
+        padding: 5px 8px;
+        font-size: 14px;
+    }
+    
+    
+}
+
+
+
+@media (max-width: 414px) {
+
+    .header__logo {
+        width: 50%;
+    }
+
+    .header__main-menu {
+        top: 118%;
+        left: 18%;
+    }
+    
+    
+    .fisrt-and-last__dish-block-box-main-box-for-name-title {
+        font-size: 8px;
+    }
+    
+    .fisrt-and-last__dish-block-box-main-box-title-box {
+        width: 90%;
+    }
+    
+    .fisrt-and-last__dish-block-box-main-box-about-title {
+        font-size: 15px;
+    }
+    
+    .fisrt-and-last__dish-block-box-main-box-about-title-span {
+        font-size: 10px;
+    }
+    
+    
+    .fisrt-and-last__dish-block-box-main-box-about-quanit-link-minus {
+        padding: 5px;
+        font-size: 13px;
+    }
+    
+    .fisrt-and-last__dish-block-box-main-box-about-quanit-link-plus {
+        padding: 5px;
+        font-size: 14px;
+    }
+    
+    .fisrt-and-last__dish-block-box-main-box-about-quanit-outupt {
+        padding-top: 4px;
+        padding-left: 21%;
+        padding-bottom: 4px;
+    }
+    
+    .fisrt-and-last__dish-block-box-main-box-about-btn {
+        font-size: 9px;
+        width: 83px;
+    }
+    
+    .fisrt-and-last__dish-block-box-foto-box-img {
+        width: 173%;
+        height: 119px;
+        object-fit: cover;
+        border-radius: 10px 0 0 10px;
+    }
+    
+    .fisrt-and-last__dish-block-box-main-box-title-box-title {
+        font-size: 12px;
+    }
+    
+    .order-first{
+        order: -1;
+    }
+    
+    .order-second{
+        order: 0;
+    }
+    
+    .order-last{
+        order: 1;
+    }
+    
+    .first-and-last__about-basket-block-additives-title {
+        font-size: 23px;
+    }
+    
+    .first-and-last__about-basket-block-additives-tomato {
+        width: 80%;
+        margin: 25px auto auto auto;
+    }
+    
+    .first-and-last__about-basket-block-additives-tomato-title-box {
+        padding: 8px 0px 8px 20px;
+    }
+    
+    .first-and-last__about-basket-block-additives-tomato-img-box-foto {
+        width: 105%;
+        height: 71px;
+    }
+    
+    
+    .first-and-last__about-basket-block-additives-tomato-title-box-ds {
+        color: #ffffff;
+        font-size: 17px;
+    }
+    
+    
+    
+    .first-and-last__about-basket-block-order-and-check-order-box-dish-title {
+        font-size: 13px;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-order-box-dish-meat-title {
+        font-size: 13px;
+        width: 73%;
+    }
+    
+    
+    .first-and-last__about-basket-block-order-and-check-order-box-end-price {
+        width: 39%;
+    }
+    
+    
+    .first-and-last__about-basket-block-order-and-check-btn {
+        width: 60%;
+    }
+    
+    .first-and-last__about-order-block-title {
+        margin-right: 10px;
+        font-size: 14px;
+    }
+    
+    .fisrt-and-last__dish-block-box-main-box-about-btn{
+        display: none;
+    }
+    
+    .first-and-last__about-basket-block-serch-box-input {
+        border-radius: 5px 0 0 5px;
+        max-width: 138px;
+        margin:  0 0 auto 0;
+        font-size: 12px;
+    }
+    
+    .first-and-last__about-basket-block-serch-box-btn {
+        right: 116px;
+        padding: 11px;
+    }
+    
+    .first-and-last__about-order-block-btn {
+        font-size: 10px;
+        max-width: 133px;
+        width: 85%;
+        padding: 14px;
+    }
+    
+    .first-and-last__about-basket-block-additives-ter-extra-box-img {
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .first-and-last__about-basket-block-additives-tomato-extra-box-img{
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+    }
+    
+    
+    .first-and-last__about-basket-block-additives-ter-extra-box-img-two{
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .first-and-last__about-basket-block-additives-tomato-extra-box-btn {
+        border-radius: 50%;
+        padding: 0px 5px;
+        top: -9px;
+        left: 24px;
+    }
+    
+    .first-and-last__about-basket-block-additives-ter-extra-box-btn{
+        border-radius: 50%;
+        padding: 0px 5px;
+        top: -9px;
+        left: 24px;
+    }
+    
+    .first-and-last__about-basket-block-additives-ter-extra-box-btn-two{
+        border-radius: 50%;
+        padding: 0px 5px;
+        top: -9px;
+        left: 24px;
+    }
+    
+    .first-and-last__about-basket-block-additives-ter-title-box-text {
+        font-size: 9px;
+    }
+    
+    .first-and-last__about-basket-block-additives-tomato-title-box-text {
+        font-size: 12px;
+        width: 70%;
+    }
+    
+    .first-and-last__about-basket-block-additives-tomato-btn {
+        padding: 8px 12px;
+        top: -15px;
+        right: 1px;
+    }
+    
+    .first-and-last__about-basket-block-additives-tomato-btn {
+        padding: 8px 12px;
+        top: -15px;
+        right: 1px;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-order-box-dish-meat-title {
+        font-size: 11px;
+        width: 73%;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-order-box-dish-cezar-title {
+        font-size: 11px;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-order-box-promo-box-input {
+        font-size: 9px;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-order-box-promo-box-btn {
+        width: 38px;
+        height: 37px;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-order-box-end-price {
+        width: 53%;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-order-box-end-price-no-price {
+        font-size: 12px;
+    }    
+    
+    .first-and-last__about-basket-block-order-and-check-order-box-end-price-with-price {
+        font-size: 18px;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-order-box-dish-coast {
+        font-size: 18px;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-order-box-dish-meat-coast {
+        font-size: 18px;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-order-box-dish-cezar-coast {
+        font-size: 18px;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-order-box-dish-quinity {
+        font-size: 18px;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-order-box-dish-meat-quinity {
+        font-size: 18px;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-order-box-dish-cezar-quinity {
+        font-size: 18px;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-order-box-end-title {
+        font-size: 22px;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-btn {
+        width: 77%;
+        font-size: 14px;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-title {
+        font-size: 20px;
+    }
+    
+    
+    .first-and-last__about-basket-block-order-and-check-hide-block-title {
+        font-size: 9px;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-hide-block-box-input-input {
+        font-size: 10px;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-hide-block-box-input-textarea {
+        font-size: 10px;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-hide-block-box-discription-ul-li-text {
+        font-size: 10px;
+        width: 100%;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-hide-block-box-discription-btn {
+        font-size: 11px;
+        width: 64%;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-hide-block-text {
+        font-size: 10px;
+        width: 100%;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-hide-block-box-discription-btn {
+        font-size: 12px;
+        width: 100%;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-hide-block {
+        top: 2%;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-hide-block-text {
+        font-size: 10px;
+        width: 91%;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-hide-block-box-discription-ul-li-span {
+        border-radius: 50%;
+        width: 6px;
+        height: 6px;
+    }
+    
+    .first-and-last__discription-block-two-title{
+        font-size: 17px;
+        width: 80%;
+    }
+    
+    
+    
+    .header__block-call {
+        padding: 15px 40px 28px 29px;
+    }
+    
+    .first-and-last__discription-block-title {
+        color: #ffffff;
+        font-size: 20px;
+    }
+    
+    .first-and-last__discription-block-second-title {
+        font-size: 24px;
+    }
+    
+    .block-order-table {
+        margin-top: 20px;
+    }
+    
+    .fisrt-and-last__dish-block-box-main-box {
+        padding: 4px 9px 10px 10px;
+    }
+    
+    .rewiew-block__hide-box-block-btn {
+        flex-direction: column;
+    }
+    
+    .rewiew-block__hide-box-block-btn-one {
+        padding: 16px 7px;
+        font-size: 14px;
+    }
+    
+    .rewiew-block__hide-box-block-btn-two {
+        padding: 16px 27px;
+        font-size: 14px;
+        margin-top: 15px;
+    }
+    
+    .block-btn-about-order{
+        flex-direction: column;
+    }
+    .first-and-last__about-basket-block-order-and-check-for-btn-btn {
+        padding: 16px 25px;
+        font-size: 14px;
+    }
+    
+    .first-and-last__about-basket-block-order-and-check-for-btn-btn-two {
+        padding: 16px 25px;
+        font-size: 14px;
+    }
+    
+    
+    .section-order-readi-title {
+        font-size: 13px;
+    }
+    
+    .section-order-readi-btn {
+        font-size: 9px;
+        max-width: 130px;
+    }
+    
+    .btn-icon-none {
+        font-size: 20px;
+    }
+    
+    
+    
+    
+    
+    
+    
+
+    .fooeter__last-text {
+        font-size: 10px;
+    }
+
+    .fooetr__title {
+        font-size: 16px;
+    }
+
+    .footer__ul-icon-link {
+        width: 25px;
+        height: 25px;
+    }
+
+
+    .footer__ul-icon-link-icon {
+        font-size: 15px;
+    }
+
+    .footer__fisrst-block-img {
+        width: 100%;
+    }
+
+    .footer__ul-link {
+        font-size: 12px;
+    }
+
+    .footer__block-ul-ul {
+        margin-left: 10px;
+    }
+
+}
